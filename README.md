@@ -34,6 +34,8 @@ Raw CSV data → PostgreSQL (table creation + import) → SQL analysis queries �
 3. **Analyze** — 12 SQL queries written in PostgreSQL to answer specific HR business questions
 4. **Visualize** — Each SQL query's result loaded directly into Power BI and mapped to a corresponding chart
 
+<br>
+
 ## Dataset
 
 | Table | Rows | Description |
@@ -44,6 +46,7 @@ Raw CSV data → PostgreSQL (table creation + import) → SQL analysis queries �
 | `performance` | 2,000 | Annual performance ratings (2022–2023, scale 1–5) |
 | `attendance` | 90,000 | Daily attendance records (Jan–Mar 2024) |
 
+<br>
 
 ## Business questions answered (SQL queries)
 
@@ -68,11 +71,13 @@ Each query was designed to answer a specific HR business question, and each one 
 
 All 12 queries are available in [`/queries/all_queries.sql/`](./queries/all_queries.sql).
 
+<br>
 
 ## Power BI integration
 
 Each query's result set was loaded into Power BI as its own table using `**Get Data → PostgreSQL database → Advanced options**`, pasting the corresponding SQL query directly. No DAX measures or calculated columns were created — all aggregation and business logic happens at the SQL layer, and Power BI is used purely for visualization and interactivity (slicers, filters, drill-through).
 
+<br>
 
 ## Repository structure
 
@@ -98,6 +103,8 @@ WorkforceIQ — HR Analytics Dashboard/
 │
 └── README.md
 ```
+
+<br>
 
 ## How to run this project
 
